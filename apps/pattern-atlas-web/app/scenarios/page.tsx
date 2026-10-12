@@ -99,9 +99,9 @@ export default async function ScenariosPage({
     return (
       <section className="page">
         <PageHeader
-          eyebrow="Catalog"
-          title="Scenarios"
-          description="Browse real-world architecture and integration problems, then explore the patterns that help solve them."
+          eyebrow="StrataForge"
+          title="Scenario Field Guide"
+          description="Start with a real architecture or integration problem, then explore the patterns and technologies that can address it."
         />
 
         <SectionCard title="Catalog unavailable">
@@ -219,7 +219,7 @@ export default async function ScenariosPage({
         description="Browse real-world architecture and integration problems, then explore the patterns that help solve them."
       />
 
-      <SectionCard title="Find scenarios">
+      <SectionCard title="What problem are you solving?">
         <form action="/scenarios" method="get" className="scenario-filters">
           <div className="scenario-filters__header">
             <p className="scenario-filters__copy">
