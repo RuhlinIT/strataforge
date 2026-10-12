@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "packageManager": "pnpm@10.0.0",
   "scripts": {
-    "dev": "pnpm --filter pattern-atlas-web dev",
+    "dev": "pnpm --filter strataforge-web dev",
     "inventory:scenarios": "tsx scripts/inventory-scenarios.ts",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",

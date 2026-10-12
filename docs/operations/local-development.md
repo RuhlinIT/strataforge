@@ -42,7 +42,7 @@ http://localhost:3000
 The current primary application is:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 ```
 
 The directory name is a legacy internal technical identifier. The public product name is StrataForge.
@@ -106,7 +106,7 @@ Example future structure:
 ```text
 .env.example
 .env.local
-apps/pattern-atlas-web/.env.local
+apps/strataforge-web/.env.local
 apps/event-worker/.env.local
 ```
 

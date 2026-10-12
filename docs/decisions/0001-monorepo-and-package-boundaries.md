@@ -29,7 +29,7 @@ The monorepo will contain:
 
 ```text
 apps/
-  pattern-atlas-web/
+  strataforge-web/
     Primary Next.js product application
 
   event-worker/
@@ -76,7 +76,7 @@ The current repository directory names and package namespaces may retain legacy 
 For example:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 @atlas-patterns/schemas
 @atlas-patterns/ui
 ```
@@ -87,7 +87,7 @@ These identifiers are technical implementation details. Renaming them is a separ
 
 | Area | Responsibility | Must not own |
 |---|---|---|
-| `apps/pattern-atlas-web` | Routes, layouts, user-facing workflows, API boundaries, presentation composition | Kafka consumers, direct projection processing, shared domain ownership |
+| `apps/strataforge-web` | Routes, layouts, user-facing workflows, API boundaries, presentation composition | Kafka consumers, direct projection processing, shared domain ownership |
 | `apps/event-worker` | Outbox publishing, Kafka consumption, retries, projections, dead-letter handling | Next.js routes, UI rendering |
 | `packages/content` | Curated source-controlled knowledge and examples | Runtime database access, Kafka clients, user-specific state |
 | `packages/schemas` | Shared types, Zod schemas, event/API contracts, validation definitions | UI, database queries, framework routes, provider SDK calls |
@@ -223,7 +223,7 @@ The public rebrand is complete, but a full technical namespace migration introdu
 The current implementation should continue using the existing workspace structure:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 packages/content
 packages/schemas
 packages/ui

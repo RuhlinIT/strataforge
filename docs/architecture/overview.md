@@ -36,7 +36,7 @@ The current codebase is a pnpm workspace centered on a Next.js web application.
 StrataForge repository
 │
 ├── apps/
-│   └── pattern-atlas-web/
+│   └── strataforge-web/
 │       └── Next.js application
 │
 ├── packages/

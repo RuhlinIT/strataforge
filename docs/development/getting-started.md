@@ -142,7 +142,7 @@ The PostgreSQL service uses `pg_isready` as its health check. Wait until the ser
 Create a local environment file for the Next.js application:
 
 ```bash
-cp .env.example apps/pattern-atlas-web/.env.local
+cp .env.example apps/strataforge-web/.env.local
 ```
 
 Ensure it contains the local PostgreSQL connection string:
@@ -244,7 +244,7 @@ http://localhost:3000
 The current primary application is located at:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 ```
 
 The directory name is an existing internal technical identifier. The public product name is StrataForge.
@@ -468,7 +468,7 @@ Confirm that port `5432` is not already used by another local PostgreSQL process
 For the Next.js application, confirm this file exists:
 
 ```text
-apps/pattern-atlas-web/.env.local
+apps/strataforge-web/.env.local
 ```
 
 For direct database package commands, confirm this file exists:

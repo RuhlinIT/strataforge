@@ -15,7 +15,7 @@ For local setup, see [Getting started](getting-started.md). For architectural pa
 strataforge/
 │
 ├── apps/
-│   └── pattern-atlas-web/
+│   └── strataforge-web/
 │       ├── app/
 │       ├── components/
 │       ├── public/
@@ -93,7 +93,7 @@ pnpm dev
 
 ## Current applications
 
-### `apps/pattern-atlas-web`
+### `apps/strataforge-web`
 
 This is the primary Next.js application.
 
@@ -124,7 +124,7 @@ It should not own:
 The directory name is currently:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 ```
 
 The public product name remains:
@@ -290,7 +290,7 @@ external systems
 ### Allowed direction
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
   → packages/ui
   → packages/content
   → packages/schemas
@@ -311,7 +311,7 @@ apps/event-worker
 
 ```text
 packages/schemas
-  → apps/pattern-atlas-web
+  → apps/strataforge-web
 
 packages/ui
   → database client
@@ -372,7 +372,7 @@ The database package generates Prisma Client and emits its compiled `dist` artif
 Use pnpm filtering when working on one package.
 
 ```bash
-pnpm --filter ./apps/pattern-atlas-web dev
+pnpm --filter ./apps/strataforge-web dev
 ```
 
 ```bash
@@ -487,7 +487,7 @@ pnpm --filter ./packages/ui add package-name --save-peer
 Add a workspace dependency using the workspace protocol:
 
 ```bash
-pnpm --filter ./apps/pattern-atlas-web add \
+pnpm --filter ./apps/strataforge-web add \
   "@atlas-patterns/database@workspace:*"
 ```
 
@@ -653,7 +653,7 @@ Do not copy generated Prisma Client files into source control.
 
 Confirm that:
 
-1. `@atlas-patterns/database` is declared in `apps/pattern-atlas-web/package.json`.
+1. `@atlas-patterns/database` is declared in `apps/strataforge-web/package.json`.
 2. The database package exports the required function from `src/index.ts`.
 3. The database package builds successfully.
 4. The import is server-side and does not originate from a component marked `"use client"`.
