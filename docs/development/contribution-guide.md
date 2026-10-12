@@ -232,7 +232,7 @@ packages/ui
 Place product-specific route or page behavior in:
 
 ```text
-apps/pattern-atlas-web
+apps/strataforge-web
 ```
 
 UI components should not directly own:

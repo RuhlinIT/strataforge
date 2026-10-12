@@ -26,7 +26,7 @@ StrataForge is a pnpm workspace with one primary Next.js application and shared 
 StrataForge
 │
 ├── apps/
-│   └── pattern-atlas-web/
+│   └── strataforge-web/
 │       ├── app/
 │       │   ├── browse and pattern routes
 │       │   ├── compare routes
@@ -60,7 +60,7 @@ StrataForge
     └── GitHub Actions workflows
 ```
 
-The `apps/pattern-atlas-web` and `@atlas-patterns/*` names are current internal technical identifiers. The public product name is StrataForge. Internal namespace migration, if pursued, should be a separate controlled change.
+The `apps/strataforge-web` and `@atlas-patterns/*` names are current internal technical identifiers. The public product name is StrataForge. Internal namespace migration, if pursued, should be a separate controlled change.
 
 ## Current application flow
 
@@ -88,7 +88,7 @@ The application currently provides a foundation for:
 
 ## Package responsibilities
 
-### `apps/pattern-atlas-web`
+### `apps/strataforge-web`
 
 The Next.js application owns:
 
@@ -206,7 +206,7 @@ The target architecture adds explicit domain, persistence, event, document, grap
 
 ```text
 apps/
-  pattern-atlas-web/
+  strataforge-web/
     Presentation and route layer
 
   event-worker/

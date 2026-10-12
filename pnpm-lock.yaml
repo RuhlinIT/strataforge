@@ -34,7 +34,7 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3
 
-  apps/pattern-atlas-web:
+  apps/strata:
     dependencies:
       '@atlas-patterns/content':
         specifier: workspace:*

@@ -156,7 +156,7 @@ Use committed example files only:
 
 ```text
 .env.example
-apps/pattern-atlas-web/.env.example
+apps/strataforge-web/.env.example
 apps/event-worker/.env.example
 ```
 
